@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{ 
+  background-color: floralwhite;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+  width:100%;
+  border-radius: 22px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+
+.profile-card::before{
+   content:" ";
+   position: absolute;
+   top: 0;
+   height: 36%;
+   width: 100%;
+   background-color: #4070f4;
+   border-radius: 22px 22px 0px 0px;
+}
+ 
+.img{
+  background-color: #4070f4;
+  border-radius: 50%;
+  height: 115px;
+  width: 115px;
+  padding: 2px;
+  margin-bottom: 8px;
+  z-index: 3;
+}
+
+.img .profile-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid ghostwhite;
+}
+
+.profile-card .text-data{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.text-data .name{
+   font-size: 22px;
+   font-weight: 500;
+}
+
+.profile-card .media-icons{
+   display: flex;
+   align-items: center;
+   margin-top: 8px;
+}
+
+.media-icons .icon1{
+   margin: 0px 7px;
+   background-color: black;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   border-radius: 12px;
+   height: 25px;
+   width: 25px;
+}
+
+.profile-card .buttons{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+.buttons .button{
+    background-color: #4070f4;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    padding: 8px;
+    margin: 0px 9px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.buttons .button:hover{
+    background-color: #0e4bf1;
+}
+
+.profile-card .Analytics{
+    display: flex;
+    align-items: center;
+    margin-top : 10px;
+}
+
+.Analytics .data{
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 0px 9px;
+    border-right: 2px solid darkgrey;
+}
+  
+.data:last-child{
+    border-right: none;
+}
+
+.data i{
+    margin-right: 6px;
+    font-size: 17px;
+}
